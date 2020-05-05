@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail">
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textStyle="italic"
+        android:text="Up to Date Through: "/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/title1"
+        android:layout_alignParentTop="true"
+        android:textStyle="italic"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/county"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:text="County: "
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/title1"/>
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/county"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/date"/>
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_alignParentLeft="true"
+        android:text="Total Number Deaths: "
+        android:layout_below="@+id/county"/>
+
+    <TextView
+        android:id="@+id/deathMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/title2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/state"/>
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_alignParentLeft="true"
+        android:text="Total Number Cases: "
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/title2"/>
+
+    <TextView
+        android:id="@+id/caseMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/title3"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/deathMax"/>
+    <TextView
+        android:id="@+id/title4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_alignParentLeft="true"
+        android:text="Most Afflicted County: "
+        android:layout_below="@+id/title3"/>
+
+    <TextView
+        android:id="@+id/stateCountyCaseMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/title4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/caseMax"/>
+    <TextView
+        android:id="@+id/title5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_alignParentLeft="true"
+        android:text="Afflicted County Deaths: "
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/title4"/>
+
+    <TextView
+        android:id="@+id/afflictedCountyDeath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/title5"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/stateCountyCaseMax"/>
+    <TextView
+        android:id="@+id/title6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_alignParentLeft="true"
+        android:text="Calculated Days Till Worst Afflicted County Numbers:"
+        android:layout_below="@+id/title5"/>
+
+    <TextView
+        android:id="@+id/tillWorst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/title6"/>
+
+</RelativeLayout>
